@@ -44,3 +44,7 @@ No G1a/VQ24/XYZ/Unity/Godot: those solve a different problem.
 The ground is seeded (1701); props are local original geometry composed with a painterly palette, native Canvas 2D raster and sorted by foot Y. Missing browser adapter, engine loop, 2D player animation, melee, AI, damage model, loot, and UI were all implemented in this test folder rather than adding misleading shared-skill dependencies.
 
 The 640×360 internally rendered scene scales with `image-rendering: pixelated`. Pixel detail is best assessed at 1×/2× native scale. Art still requires independent human visual approval before treating the T01/G03 experiment as an accepted release.
+
+## Test evidence (2026-11-01)
+
+Read [TEST-REPORT.md](TEST-REPORT.md) for exact PASS/FAIL/NOT_RUN gates, the 19 recorded Chromium checks, screenshot evidence and honest limitations of direct URL navigation in the sandbox. The screenshots are from Chromium's actual Canvas session; final visual acceptance belongs to the user.

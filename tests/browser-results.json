@@ -1,0 +1,78 @@
+{
+  "intro": {
+    "status": "PASS",
+    "detail": ""
+  },
+  "runtime": {
+    "status": "PASS",
+    "detail": ""
+  },
+  "colliders": {
+    "status": "PASS",
+    "detail": ""
+  },
+  "movement": {
+    "status": "PASS",
+    "detail": "137.0 -> 181.8"
+  },
+  "dodge": {
+    "status": "PASS",
+    "detail": ""
+  },
+  "enemy_ai": {
+    "status": "PASS",
+    "detail": "distance 80.2 -> 33.5, state=windup"
+  },
+  "no_js_errors": {
+    "status": "PASS",
+    "detail": "[]"
+  },
+  "melee_damage": {
+    "status": "PASS",
+    "detail": "kills=6"
+  },
+  "enemy_damage": {
+    "status": "PASS",
+    "detail": "hp=86"
+  },
+  "death_of_enemy": {
+    "status": "PASS",
+    "detail": "kills=6"
+  },
+  "loot": {
+    "status": "PASS",
+    "detail": "souls=3"
+  },
+  "healing_potion": {
+    "status": "PASS",
+    "detail": "HP 86->100"
+  },
+  "four_embers": {
+    "status": "PASS",
+    "detail": "souls=4"
+  },
+  "win_via_bell": {
+    "status": "PASS",
+    "detail": "state=victory"
+  },
+  "restart": {
+    "status": "PASS",
+    "detail": ""
+  },
+  "no_js_errors_after_combat": {
+    "status": "PASS",
+    "detail": "[]"
+  },
+  "player_death": {
+    "status": "PASS",
+    "detail": "state=dead HP=0"
+  },
+  "restart_after_death": {
+    "status": "PASS",
+    "detail": ""
+  },
+  "no_js_errors_death": {
+    "status": "PASS",
+    "detail": "[]"
+  }
+}

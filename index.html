@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121319">
+  <title>POPIÓŁ I DZWON — niezależny vertical slice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topline"><div class="crest">✦</div><div><small>NIEZALEŻNY TEST · MODERN PIXEL ART</small><h1>POPIÓŁ <i>I</i> DZWON</h1></div><span class="build">PROLOG · VERTICAL SLICE</span></header>
+    <div class="game-frame">
+      <canvas id="game" width="640" height="360" aria-label="Gra action RPG: Popiół i Dzwon" tabindex="0"></canvas>
+      <div class="top-hud" id="top-hud"><div class="questlabel">OSTATNI DZWON</div><div id="quest">Zbierz cztery iskry umarłych</div></div>
+      <div class="bottom-hud"><div class="orb health-orb"><span id="hp">100</span><small>ŻYCIE</small></div><div class="hud-middle"><span class="legend" id="place">RUINY KAPLICY POPIOŁÓW</span><div class="statusrow"><span id="souls">✧ 0 / 4 ISKIER</span><span id="potion">✚ 1 MIKSTURA</span><span id="ability">⚔ ATAK GOTOWY</span></div><div id="message" aria-live="polite">W ciemności wciąż słychać dzwon...</div></div><div class="orb stamina-orb"><span id="roll">↗</span><small>UNIK</small></div></div>
+      <div id="overlay" class="overlay visible"><div class="panel"><div class="sigil">✧ ☩ ✧</div><div class="overline">OPOWIEŚĆ Z POPIOŁÓW</div><h2 id="overlay-title">Popiół i Dzwon</h2><p id="overlay-text">Zamilkło sanktuarium nad Czarną Doliną. Zabierz cztery iskry ze strażników prochów i zapal dzwon, zanim cień pochłonie ostatnie światło.</p><button id="start" type="button">ROZPOCZNIJ WĘDRÓWKĘ</button><div class="keyhelp">WASD / STRZAŁKI — RUCH &nbsp; • &nbsp; MYSZ — CEL<br>LEWY PRZYCISK / SPACJA — ATAK &nbsp; • &nbsp; SHIFT — UNIK<br>E — MIKSTURA &nbsp; • &nbsp; F — DZWON &nbsp; • &nbsp; R — RESTART</div></div></div>
+    </div>
+    <footer><span><b>STEROWANIE:</b> WASD · MYSZ + LPM · SPACJA · SHIFT · E · F</span><span>AUTORSKI ŚWIAT · BEZ POBIERANIA ASSETÓW · HTML5 CANVAS</span></footer>
+  </main>
+  <script src="art.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -49,11 +49,19 @@ function distance(a,b){return Math.hypot(a.x-b.x,a.y-b.y)}
 function collisionAt(x,y,r,ignore){if(x<38+r||y<38+r||x>W-38-r||y>H-38-r)return true;
  for(const o of props){if(o===ignore)continue;if(Math.hypot(x-o.x,y-o.y)<r+o.r)return true}
  return false}
+function occupied(x,y,r,entity){
+ if(collisionAt(x,y,r))return true;
+ if(!hero||!enemies)return false;
+ if(entity!==hero&&Math.hypot(x-hero.x,y-hero.y)<r+hero.r-2)return true;
+ for(const e of enemies){if(e.dead||e===entity)continue;
+  if(Math.hypot(x-e.x,y-e.y)<r+e.r-3)return true}
+ return false
+}
 function slideMove(entity,dx,dy){let moved=false;
  const steps=Math.max(1,Math.ceil(Math.hypot(dx,dy)/5));dx/=steps;dy/=steps;
  for(let i=0;i<steps;i++){
-  if(!collisionAt(entity.x+dx,entity.y,entity.r)){entity.x+=dx;moved=true}
-  if(!collisionAt(entity.x,entity.y+dy,entity.r)){entity.y+=dy;moved=true}
+  if(!occupied(entity.x+dx,entity.y,entity.r,entity)){entity.x+=dx;moved=true}
+  if(!occupied(entity.x,entity.y+dy,entity.r,entity)){entity.y+=dy;moved=true}
  }
  return moved
 }
